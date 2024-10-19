@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cont-display">
+            <div class="display">
+                <input type="text" class="display-input">
+            </div>
+        </div>
+        <div class="keys">
+            <button class="btn-perc btn" onclick="appendToDisplay('%')">%</button>
+            <button class="btn-s btn" onclick="appendToDisplay('&radic')"><i class="fa-solid fa-square-root-variable"></i></button>
+            <button class="btn-ce btn" onclick="appendToDisplay('CE')">CE</button>
+            <button class="btn-c btn" onclick="appendToDisplay('E')">C</button>
+            <button class="btn-7 btn" onclick="appendToDisplay('7')">7</button>
+            <button class="btn-8 btn" onclick="appendToDisplay('8')">8</button>
+            <button class="btn-9 btn" onclick="appendToDisplay('9')">9</button>
+            <button class="btn-min btn" onclick="appendToDisplay('-')"><i class="fa-solid fa-minus"></i></button>
+            <button class="btn-4 btn" onclick="appendToDisplay('4')">4</button>
+            <button class="btn-5 btn" onclick="appendToDisplay('5')">5</button>
+            <button class="btn-6 btn" onclick="appendToDisplay('6')">6</button>
+            <button class="btn-div btn" onclick="appendToDisplay('/')"><i class="fa-solid fa-divide"></i></button>
+            <button class="btn-1 btn" onclick="appendToDisplay('1')">1</button>
+            <button class="btn-2 btn" onclick="appendToDisplay('2')">2</button>
+            <button class="btn-3 btn" onclick="appendToDisplay('3')">3</button> 
+            <button class="btn-mul btn" onclick="appendToDisplay('*')"><i class="fa-solid fa-xmark"></i></button>
+            <button class="btn-. btn" onclick="appendToDisplay('.')">.</button>
+            <button class="btn-0 btn" onclick="appendToDisplay('0')">0</button>
+            <button class="btn-equ btn" onclick="appendToDisplay('=')">=</button>
+            <button class="btn-plu btn" onclick="appendToDisplay('')"><i class="fa-solid fa-plus"></i></button>
+        </div>
+    </div>
+</body>
+</html>
